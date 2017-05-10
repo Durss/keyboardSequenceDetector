@@ -70,10 +70,8 @@ class KeyboardSequenceDetector {
 		}
 		for(i = 0; i < len; ++i) {
 			sequence = this._sequences[i];
-			console.log(sequence)
 			if(keyCode == sequence.keys[sequence.pointer]) {
 				sequence.pointer ++;
-				console.log(sequence.pointer);
 				if(sequence.pointer == sequence.keys.length){
 					sequence.pointer = 0;
 					if(this._callback) {
